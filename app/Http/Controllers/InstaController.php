@@ -15,8 +15,8 @@ class InstaController extends Controller
 
         $response = $client->request('GET', "https://instagram-statistics-api.p.rapidapi.com/community?url=https%3A%2F%2Fwww.instagram.com%2F$username%2F", [
             'headers' => [
-                'X-RapidAPI-Host' => 'instagram-statistics-api.p.rapidapi.com',
-                'X-RapidAPI-Key' => '12719f3efdmshd4fbb4b5d90b36fp19bb47jsna07d98516475',
+                'X-RapidAPI-Host' => config('services.rapidapi.host'),
+                'X-RapidAPI-Key' => config('services.rapidapi.key'),
             ],
         ]);
 

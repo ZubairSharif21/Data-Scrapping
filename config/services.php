@@ -30,5 +30,9 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'rapidapi' => [
+        'host' => env('RAPIDAPI_HOST'),
+        'key' => env('X_RapidAPI_Key'),
+    ],
 
 ];
