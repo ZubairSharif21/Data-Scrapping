@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\InstaController;
 use App\Http\Controllers\ScraperController;
+use App\Http\Controllers\YtController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::post('senddata',[InstaController::class,'index'])->name('senddata');
 Route::get('data',[ScraperController::class,'index']);
 
 Route::get('sdata',[InstaController::class,'index']);
+Route::get('ytdata',[YtController::class,'index']);
